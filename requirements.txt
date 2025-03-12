@@ -1,1 +1,4 @@
-4. Run the Flask application:
+Flask
+pandas
+gunicorn
+xlsxwriter
