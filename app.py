@@ -5,7 +5,7 @@ import io
 app = Flask(__name__)
 
 # Load the dataset
-data = pd.read_excel('dataset/dummy_npi_data.xlsx')
+data = pd.read_excel('dummy_npi_data.xlsx')
 data.columns = data.columns.str.strip()  # Remove any leading/trailing spaces from column names
 data['Login Time'] = pd.to_datetime(data['Login Time'])
 data['Logout Time'] = pd.to_datetime(data['Logout Time'])
